@@ -9,5 +9,3 @@ RUN curl https://dl.min.io/client/mc/release/linux-ppc64le/mc --output /usr/loca
 RUN chmod a+x /usr/local/bin/mc 
 RUN mc update
 RUN mkdir -p /buckets/ml-bucket
-
-ENTRYPOINT ['--', 'server', '/tmp/minio']
