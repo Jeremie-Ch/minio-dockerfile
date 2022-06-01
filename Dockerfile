@@ -10,4 +10,4 @@ RUN chmod a+x /usr/local/bin/mc
 RUN mc update
 RUN mkdir -p /buckets/ml-bucket
 
-ENTRYPOINT ['server', '/tmp/minio']
+ENTRYPOINT ['--', 'server', '/tmp/minio']
