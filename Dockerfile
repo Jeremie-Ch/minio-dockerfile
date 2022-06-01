@@ -10,4 +10,4 @@ RUN chmod a+x /usr/local/bin/mc
 RUN mc update
 RUN mkdir -p /buckets/ml-bucket
 
-ENTRYPOINT ['mc', 'admin', 'service', 'restart', 'minio-dockerfile']
+CMD ["bash"]
